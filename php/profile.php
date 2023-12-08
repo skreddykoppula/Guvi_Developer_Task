@@ -1,5 +1,5 @@
 <?php
-$mongo= new MongoClient();
+$mongo= new MongoClient("mongodb://localhost:27017");
 $db=$mongo->local;
 $collection=$db->help;
 if($_POST)
